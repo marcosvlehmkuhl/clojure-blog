@@ -1,9 +1,11 @@
-(defproject my-website "0.1.0-SNAPSHOT"
+(defproject my-website "0.0.1-SNAPSHOT"
   :description "My blog written in clojure"
   :url "http://marcosvlehmkuhl.io"
-  :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
-            :url "https://www.eclipse.org/legal/epl-2.0/"}
-  :dependencies [[org.clojure/clojure "1.10.3"]]
+  :license {:name "The MIT License"
+            :url "http://opensource.org/licenses/MIT"}
+  :dependencies [[org.clojure/clojure "1.10.3"]
+                 [selmer "1.12.50"]
+                 [markdown-clj "1.11.1"]]
   :main ^:skip-aot my-website.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
